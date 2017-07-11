@@ -1,0 +1,7 @@
+/home/jaqcawaling/IdeaProjects/googletraining/src/main/java/com/acn/bootcamp/config/DatabaseConnection.java
+/home/jaqcawaling/IdeaProjects/googletraining/src/main/java/com/acn/bootcamp/service/impl/CitizenServiceImpl.java
+/home/jaqcawaling/IdeaProjects/googletraining/src/main/java/com/acn/bootcamp/service/CitizenService.java
+/home/jaqcawaling/IdeaProjects/googletraining/src/main/java/com/acn/bootcamp/dao/CitizenDAO.java
+/home/jaqcawaling/IdeaProjects/googletraining/src/main/java/com/acn/bootcamp/domain/Citizen.java
+/home/jaqcawaling/IdeaProjects/googletraining/src/main/java/com/acn/bootcamp/controller/CitizenController.java
+/home/jaqcawaling/IdeaProjects/googletraining/src/main/java/com/acn/bootcamp/CitizenApiApp.java
