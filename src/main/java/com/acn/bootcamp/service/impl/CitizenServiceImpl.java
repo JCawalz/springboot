@@ -11,6 +11,7 @@ import org.springframework.stereotype.Service;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -19,31 +20,66 @@ import java.util.List;
 @Service
 public class CitizenServiceImpl implements CitizenService{
 
-    CitizenDAO daoFunction = new CitizenDAO();
+
 
     @Override
-    public Citizen retrieveCitizenById(int id) throws SQLException {
-        return daoFunction.retrieveCitizenById(id);
+    public Citizen retrieveCitizenById(int id){
+        CitizenDAO daoFunction = new CitizenDAO();
+        Citizen citizen = null;
+        try {
+            citizen = daoFunction.retrieveCitizenById(id);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return citizen;
     }
 
     @Override
-    public List<Citizen> retrieveCitizens() throws SQLException {
-        return daoFunction.retrieveCitizens();
+    public List<Citizen> retrieveCitizens(){
+        CitizenDAO daoFunction = new CitizenDAO();
+        List<Citizen> citizens = new ArrayList<>();
+        try {
+            citizens = daoFunction.retrieveCitizens();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return citizens;
     }
 
     @Override
-    public List<Citizen> createCitizen(Citizen citizen) throws SQLException {
-        return daoFunction.createCitizen(citizen);
+    public List<Citizen> createCitizen(Citizen citizen){
+        CitizenDAO daoFunction = new CitizenDAO();
+        List<Citizen> citizens = new ArrayList<>();
+        try {
+            citizens = daoFunction.createCitizen(citizen);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return  citizens;
     }
 
     @Override
-    public List<Citizen> updateCitizen(Citizen citizen) throws SQLException {
-        return daoFunction.updateCitizen(citizen);
+    public List<Citizen> updateCitizen(Citizen citizen){
+        CitizenDAO daoFunction = new CitizenDAO();
+        List<Citizen> citizens = new ArrayList<>();
+        try {
+            citizens = daoFunction.updateCitizen(citizen);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return citizens;
     }
 
     @Override
-    public List<Citizen> deleteCitizen(int id) throws SQLException {
-        return daoFunction.deleteCitizen(id);
+    public List<Citizen> deleteCitizen(int id){
+        CitizenDAO daoFunction = new CitizenDAO();
+        List<Citizen> citizens = new ArrayList<>();
+        try {
+            citizens = daoFunction.deleteCitizen(id);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return  citizens;
     }
 
 }

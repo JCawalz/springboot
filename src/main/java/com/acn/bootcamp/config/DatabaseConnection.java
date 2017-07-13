@@ -15,8 +15,7 @@ import java.sql.SQLException;
 public class DatabaseConnection {
 
     Connection conn = null;
-    //create connection
-    private Connection getInstance() {
+    public Connection getConnection() {
 
         try {
             if (conn == null) {
@@ -30,11 +29,6 @@ public class DatabaseConnection {
             e.printStackTrace();
             System.out.println("Unable to connect. Please configure your database.");
         }
-        return conn;
-    }
-
-    public Connection connect(){
-        conn = getInstance();
         return conn;
     }
 
